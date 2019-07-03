@@ -9,6 +9,8 @@ Sample Input
 Sample Output
 3
 ```
+Answer
+```
 let ar=[10, 20, 20, 10, 10, 30, 50, 10, 20]
 
 function sockMerchant(n, ar) {
@@ -31,7 +33,7 @@ function sockMerchant(n, ar) {
 
 sockMerchant(10,ar)
 
-
+```
 
 
 
