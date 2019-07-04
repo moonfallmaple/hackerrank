@@ -78,10 +78,10 @@ function repeatedString(s, n) {
 ```
 
 
-```
 Question3 ：Get the number of step when jump from the start to end of an array 
 The array consist of 0 and 1,0 means you the step you can jump while 1 means the obstacle need to be avoided.
 You can take 1 or 2 step each time.
+
 ```
 Sample Input
 7
