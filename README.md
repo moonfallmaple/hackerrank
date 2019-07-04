@@ -9,7 +9,7 @@ Sample Input
 Sample Output
 3
 ```
-Answer
+Answer:
 ```
 let ar=[10, 20, 20, 10, 10, 30, 50, 10, 20]
 
@@ -43,7 +43,7 @@ aba
 Sample Output
 7
 ```
-Answer
+Answer:
 ```
 let s='aba'
 10
@@ -78,3 +78,51 @@ function repeatedString(s, n) {
 ```
 
 
+```
+Question3 ：Get the number of step when jump from the start to end of an array 
+The array consist of 0 and 1,0 means you the step you can jump while 1 means the obstacle need to be avoided.
+You can take 1 or 2 step each time.
+```
+Sample Input
+7
+0 0 1 0 0 1 0
+
+Sample Output
+4
+```
+
+Answer:
+```
+let c=[0, 1, 0, 0, 0, 1, 0]
+c=[0, 0, 1, 0, 0 ,1 ,0]
+c=[0, 0, 0, 1, 0, 0]
+
+function jumpingOnClouds(c) {
+    let count=0;
+    let currentIndex=0;
+
+    while(currentIndex<c.length-1){
+        if(c[currentIndex+1]===0){
+            if(c[currentIndex+2]===0){
+                count+=1
+                currentIndex+=2
+            }else{
+                count+=1
+                currentIndex+=1
+            }
+        }else{
+            if (c[currentIndex+2]===0){
+                count+=1
+                currentIndex+=2
+            }
+        }
+        
+    }
+  
+    // console.log('currentIndex',currentIndex)
+   return count
+
+}
+
+jumpingOnClouds(c) 
+```
